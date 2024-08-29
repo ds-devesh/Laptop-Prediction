@@ -3,8 +3,16 @@ import pickle
 import numpy as np
 
 # Load the model and dataframe
-pipe = pickle.load(open('pipe.pkl','rb'))
-df = pickle.load(open('df.pkl','rb'))
+#pipe = pickle.load(open('pipe.pkl','rb'))
+#df = pickle.load(open('df.pkl','rb'))
+
+pickle_in = open('pipe.pkl','rb')
+pipe = pickle.load(pickle_in)
+
+pickle_in01= open('df.pkl','rb')
+df =pickle.load(pickle_in01)
+
+
 
 st.title("Laptop Price Predictor")
 
